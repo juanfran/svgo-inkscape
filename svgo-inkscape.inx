@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>SVGO Output</_name>
+    <id>org.inkscape.output.svgo</id>
+    <param name="tabs" type="notebook">
+        <page name="plugins1" _gui-text="Plugins 1">
+            <param name="cleanupAttrs"  type="boolean" _gui-text="cleanupAttrs">true</param>
+            <param name="removeDoctype"  type="boolean" _gui-text="removeDoctype">true</param>
+            <param name="removeXMLProcInst"  type="boolean" _gui-text="removeXMLProcInst">true</param>
+            <param name="removeComments"  type="boolean" _gui-text="removeComments">true</param>
+            <param name="removeMetadata"  type="boolean" _gui-text="removeMetadata">true</param>
+            <param name="removeTitle"  type="boolean" _gui-text="removeTitle">false</param>
+            <param name="removeDesc"  type="boolean" _gui-text="removeDesc">true</param>
+            <param name="removeUselessDefs"  type="boolean" _gui-text="removeUselessDefs">true</param>
+            <param name="removeEditorsNSData"  type="boolean" _gui-text="removeEditorsNSData">true</param>
+            <param name="removeEmptyAttrs"  type="boolean" _gui-text="removeEmptyAttrs">true</param>
+            <param name="removeHiddenElems"  type="boolean" _gui-text="removeHiddenElems">true</param>
+            <param name="removeEmptyText"  type="boolean" _gui-text="removeEmptyText">true</param>
+            <param name="removeEmptyContainers"  type="boolean" _gui-text="removeEmptyContainers">true</param>
+            <param name="removeViewBox"  type="boolean" _gui-text="removeViewBox">true</param>
+            <param name="cleanupEnableBackground"  type="boolean" _gui-text="cleanupEnableBackground">true</param>
+            <param name="convertStyleToAttrs"  type="boolean" _gui-text="convertStyleToAttrs">true</param>
+            <param name="convertColors"  type="boolean" _gui-text="convertColors">true</param>
+            <param name="convertPathData"  type="boolean" _gui-text="convertPathData">true</param>
+            <param name="convertTransform"  type="boolean" _gui-text="convertTransform">true</param>
+            <param name="removeUnknownsAndDefaults"  type="boolean" _gui-text="removeUnknownsAndDefaults">true</param>
+        </page>
+        <page name="plugins2" _gui-text="Plugins 2">
+            <param name="removeNonInheritableGroupAttrs"  type="boolean" _gui-text="removeNonInheritableGroupAttrs">true</param>
+            <param name="removeUselessStrokeAndFill"  type="boolean" _gui-text="removeUselessStrokeAndFill">true</param>
+            <param name="removeUnusedNS"  type="boolean" _gui-text="removeUnusedNS">true</param>
+            <param name="cleanupIDs"  type="boolean" _gui-text="cleanupIDs">true</param>
+            <param name="cleanupNumericValues"  type="boolean" _gui-text="cleanupNumericValues">true</param>
+            <param name="moveElemsAttrsToGroup"  type="boolean" _gui-text="moveElemsAttrsToGroup">true</param>
+            <param name="moveGroupAttrsToElems"  type="boolean" _gui-text="moveGroupAttrsToElems">true</param>
+            <param name="collapseGroups"  type="boolean" _gui-text="collapseGroups">true</param>
+            <param name="removeRasterImages"  type="boolean" _gui-text="removeRasterImages">false</param>
+            <param name="mergePaths"  type="boolean" _gui-text="mergePaths">true</param>
+            <param name="convertShapeToPath"  type="boolean" _gui-text="convertShapeToPath">true</param>
+            <param name="sortAttrs"  type="boolean" _gui-text="sortAttrs">false</param>
+            <param name="transformsWithOnePath"  type="boolean" _gui-text="transformsWithOnePath">false</param>
+            <param name="removeDimensions"  type="boolean" _gui-text="removeDimensions">false</param>
+            <param name="removeAttrs"  type="boolean" _gui-text="removeAttrs">false</param>
+            <param name="addClassesToSVGElement"  type="boolean" _gui-text="addClassesToSVGElement">false</param>
+        </page>
+        <page name="pluginshelp1" _gui-text="Help (Plugins 1)">
+            <_param name="instructions" type="description" xml:space="preserve">
+[ cleanupAttrs ] cleanup attributes from newlines, trailing and repeating spaces
+[ removeDoctype ] remove doctype declaration
+[ removeXMLProcInst ] remove XML processing instructions
+[ removeComments ] remove comments
+[ removeMetadata ] remove metadata
+[ removeTitle ] remove title (disabled by default)
+[ removeDesc ] remove desc (only non-meaningful by default)
+[ removeUselessDefs ] remove elements of defs without id
+[ removeEditorsNSData ] remove editors namespaces, elements and attributes
+[ removeEmptyAttrs ] remove empty attributes
+[ removeHiddenElems ] remove hidden elements
+[ removeEmptyText ] remove empty Text elements
+[ removeEmptyContainers ] remove empty Container elements
+[ removeViewBox ] remove viewBox attribute when possible (disabled by default)
+[ cleanUpEnableBackground ] remove or cleanup enable-background attribute when possible
+[ convertStyleToAttrs ] convert styles into attributes
+[ convertColors ] convert colors (from rgb() to #rrggbb, from #rrggbb to #rgb)
+[ convertPathData ] convert Path data to relative or absolute whichever is shorter, convert one segment to another, trim useless delimiters, smart rounding and much more
+[ convertTransform ] collapse multiple transforms into one, convert matrices to the short aliases and much more
+[ removeUnknownsAndDefaults ] remove unknown elements content and attributes, remove attrs with default values
+            </_param>
+        </page>
+        <page name="pluginshelp2" _gui-text="Help (Plugins 2)">
+            <_param name="instructions" type="description" xml:space="preserve">
+[ removeNonInheritableGroupAttrs ] remove non-inheritable group's "presentation" attributes
+[ removeUselessStrokeAndFill ] remove useless stroke and fill attrs
+[ removeUnusedNS ] remove unused namespaces declaration
+[ cleanupIDs ] remove unused and minify used IDs
+[ cleanupNumericValues ] round numeric values to the fixed precision, remove default 'px' units
+[ moveElemsAttrsToGroup ] move elements attributes to the existing group wrapper
+[ moveGroupAttrsToElems ] move some group attributes to the content elements
+[ collapseGroups ] collapse useless groups
+[ removeRasterImages ] remove raster images (disabled by default)
+[ mergePaths ] merge multiple Paths into one
+[ convertShapeToPath ] convert some basic shapes to path
+[ sortAttrs ] sort element attributes for epic readability (disabled by default)
+[ transformsWithOnePath ] apply transforms, crop by real width, center vertical alignment and resize SVG with one Path inside (disabled by default)
+[ removeDimensions ] remove width/height attributes if viewBox is present (disabled by default)
+[ removeAttrs ] remove attributes by pattern (disabled by default)
+[ addClassesToSVGElement ] add classnames to an outer svg element (disabled by default)
+            </_param>
+        </page>
+    </param>
+    <output>
+        <extension>.svg</extension>
+        <mimetype>image/svg+xml</mimetype>
+        <_filetypename>Optimized with svgo (*.svg)</_filetypename>
+        <_filetypetooltip>Scalable Vector Graphics</_filetypetooltip>
+    </output>
+    <script>
+        <command reldir="extensions" interpreter="python">./svgo-inkscape/svgo.inkscape.py</command>
+    </script>
+</inkscape-extension>

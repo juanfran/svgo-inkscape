@@ -1,0 +1,17 @@
+{
+  "name": "svgo-inkscape",
+  "private": true,
+  "version": "0.1.0",
+  "repository": "git://github.com/juanfran/svgo-inkscape.git",
+  "author": {
+    "name": "Juanfran Alcántara"
+  },
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.1.2",
+    "svgo": "^0.5.3"
+  }
+}
