@@ -27,7 +27,7 @@ For Windows
 C:\Program Files\Inkscape\share\extensions
 ```
 
-The, you will be able to save your files as 'Optimized with SVGO'
+Then, you will be able to save your files as 'Optimized with SVGO'
 ```
 Save as -> Optimized with svgo (*.svg)
 ```
