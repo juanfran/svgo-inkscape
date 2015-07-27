@@ -9,14 +9,22 @@ The default Inkscape SVG files require a lot of inkscape metadata for edition pu
 ## Download
 
 SVGO inkscape for Linux 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.0/linux-64.tar.gz)
+SVGO inkscape for Linux 32bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.0/svgo-inkscape-linux-32.tar.gz)
+SVGO inkscape for Windows 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.0/svgo-inkscape-windows-64.zip)
+SVGO inkscape for Windows 32bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.0/svgo-inkscape-windows-32.zip)
 
 ## Install
 
 Download and uncompress the content in your Inkscape extension folder.
 
-For Linux (only version available)
+For Linux
 ```
 ~/.config/inkscape/extensions
+```
+
+For Windows
+```
+C:\Program Files\Inkscape\share\extensions
 ```
 
 The, you will be able to save your files as 'Optimized with SVGO'
