@@ -1,4 +1,4 @@
-#SVGO-inkscape
+# SVGO-inkscape
 
 This is an extension to save and optimize SVG files with [SVGO](https://github.com/svg/svgo) at Inkscape.
 
