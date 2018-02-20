@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+​ <id>svgo-inkscape</id>
+ <extends>inkscape.desktop</extends>
+ <name>SVG optimizer</name>
+ <summary>Extension to optimize SVG files for Inkscape</summary>
+ <url type="homepage">https://github.com/juanfran/svgo-inkscape</url>
+ <url type="bugtracker">https://github.com/juanfran/svgo-inkscape/issues</url> 
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>MIT</project_license>
+</component>
