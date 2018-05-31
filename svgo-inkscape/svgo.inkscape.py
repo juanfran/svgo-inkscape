@@ -67,7 +67,7 @@ class SvgoInkscape (inkex.Effect):
 
         result = os.popen(command).read()
 
-        sys.stdout.write(result.encode("UTF-8"))
+        sys.stdout.write(result)
         sys.stdout.close()
 
 if __name__ == '__main__':
