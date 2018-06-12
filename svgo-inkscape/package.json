@@ -1,7 +1,7 @@
 {
   "name": "svgo-inkscape",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "git://github.com/juanfran/svgo-inkscape.git",
   "author": {
     "name": "Juanfran Alcántara"
