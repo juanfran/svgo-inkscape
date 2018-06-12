@@ -8,11 +8,11 @@ The default Inkscape SVG files require a lot of inkscape metadata for edition pu
 
 ## Download
 
-SVGO inkscape for Linux 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-linux-64.tar.gz)
+SVGO inkscape for Linux 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-linux64.zip)
 
-SVGO inkscape for Windows 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-windows-64.zip)
+SVGO inkscape for Windows 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-windows64.zip)
 
-SVGO inkscape for Mac 32bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-mac-32.tar.gz)
+SVGO inkscape for Mac 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-mac64.zip)
 
 
 ## Install
