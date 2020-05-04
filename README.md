@@ -1,10 +1,20 @@
 # SVGO-inkscape
 
-This is an extension to save and optimize SVG files with [SVGO](https://github.com/svg/svgo) at Inkscape.
+This is an extension to save and optimize SVG files with [SVGO](https://github.com/svg/svgo) at Inkscape, it is an alternative to the already [implemented](https://commons.wikimedia.org/wiki/Help:Inkscape#Inkscape_SVG_vs._Plain_SVG) optimization Tool: [scour](https://github.com/scour-project/scour)
 
-The default Inkscape SVG files require a lot of inkscape metadata for edition purposes since SVG is the default file extension at inkscape. Using SVGO we can remove a lot of redundant and useless information such as editor metadata, comments, hidden elements, default or non-optimal values and other stuff that can be safely removed or converted without affecting SVG rendering result.
+The default Inkscape SVG files produces a lot of inkscape metadata for edition purposes since SVG is the default file extension at inkscape. Using SVGO we can remove a lot of redundant and useless information such as editor metadata, comments, hidden elements, default or unknown values and other stuff that can be removed or converted often without affecting SVG rendering result.
 
-[SVGO](https://github.com/svg/svgo) is a very active plugin in continuous development.
+[SVGO](https://github.com/svg/svgo) is not activly developed, see https://fedoramagazine.org/design-faster-web-pages-part-2-image-replacement/ and https://github.com/svg/svgo/issues/1055 and https://css-tricks.com/tools-for-optimizing-svg/#fn:1 .
+
+## Warning for using optimizers
+
+optimizing svg can lead to server damage
+- it often breaks svgs (e.g. svgo has [200 open bugs-reports](https://github.com/svg/svgo/issues))
+- svgo is in all fair benchmarks the worst in breaking svgs, see e.g. [benchmark by svgcleaner](https://github.com/RazrFalcon/svgcleaner/#correctness)
+- removing editor metadata can be a copyright violation if resharing others work
+- removing comments, can make manual editing of the file more difficult
+- removing hidden elements, removes deactivated layers
+- removing unknown and invalid values, removes helpfull editor-data, such as grids or removes the ability to [edit arcs](https://commons.wikimedia.org/wiki/File:Sodipodi-type%3D%22arc%22.svg) in inkscape, other unknown inkscape-attributes will [break](https://gitlab.com/inkscape/inbox/-/issues/427) the inkscape behavior (see e.g. [invalid elements that should be kept](https://commons.wikimedia.org/wiki/User:JoKalliauer/Optimization#invalid_elements_that_should_be_kept))
 
 ## Download
 
