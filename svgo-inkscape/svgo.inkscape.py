@@ -46,30 +46,32 @@ class SvgoInkscape (inkex.Effect):
     def __init__(self):
         inkex.Effect.__init__(self)
 
-        self.OptionParser.add_option("--tabs",
-            action="store", type="string",
+        self.arg_parser.add_argument("--tabs",
+            type=str,
             dest="tab")
 
         for key in options:
-            self.OptionParser.add_option("--" + key, type="inkbool",
-                                         action="store", dest=key, default=options[key])
+            self.arg_parser.add_argument("--" + key, type=inkex.Boolean,
+                                      dest=key, default=options[key])
 
     def getCommand(self, name, option):
         return " --"+ name + " " + str(option).lower()
 
     def effect(self):
-        command = "./node/bin/node svgo.js --file=" + self.args[0]
+        command = "./node/bin/node svgo.js --file=" + self.options.input_file
 
         optionsDict = self.options.__dict__
 
         for key in options:
             command += self.getCommand(key, optionsDict[key])
 
-        result = os.popen(command).read()
+        p = os.popen(command)
+        result = p.read()
+        p.close()
 
         sys.stdout.write(result)
         sys.stdout.close()
 
 if __name__ == '__main__':
     e = SvgoInkscape()
-    e.affect(output=False)
+    e.run()
