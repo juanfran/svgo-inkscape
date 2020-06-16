@@ -18,11 +18,11 @@ optimizing svg can lead to server damage
 
 ## Download
 
-SVGO inkscape for Linux 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-linux64.zip)
+SVGO inkscape for Linux 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v1.0.0/svgo-inkscape-linux64.zip)
 
-SVGO inkscape for Windows 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-windows64.zip)
+SVGO inkscape for Windows 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v1.0.0/svgo-inkscape-windows64.zip)
 
-SVGO inkscape for Mac 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v0.1.1/svgo-inkscape-mac64.zip)
+SVGO inkscape for Mac 64bits [Download](https://github.com/juanfran/svgo-inkscape/releases/download/v1.0.0/svgo-inkscape-mac64.zip)
 
 
 ## Install
