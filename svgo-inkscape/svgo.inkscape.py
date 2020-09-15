@@ -59,6 +59,8 @@ class SvgoInkscape (inkex.Effect):
 
     def effect(self):
         command = "./node/bin/node svgo.js --file=" + self.options.input_file
+        # windows
+        # command = "node.exe svgo.js --file=" +  self.options.input_file        
 
         optionsDict = self.options.__dict__
 
