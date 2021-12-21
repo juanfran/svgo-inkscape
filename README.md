@@ -27,7 +27,7 @@ SVGO inkscape for Mac 64bits [Download](https://github.com/juanfran/svgo-inkscap
 
 ## Install
 
-Download and uncompress the content in your Inkscape extension folder.
+Download and uncompress, copy the content inside the uncompresed folder (svgo-inkscape-windows64, svgo-inkscape-linux64 or svgo-inkscape-mac64) to your Inkscape extension folder.
 
 For Linux
 ```
@@ -36,7 +36,7 @@ For Linux
 
 For Windows
 ```
-C:\Program Files\Inkscape\share\extensions
+C:\Program Files\Inkscape\share\inkscape\extensions\
 ```
 
 Then, you will be able to save your files as 'Optimized with SVGO'
