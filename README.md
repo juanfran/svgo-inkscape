@@ -4,8 +4,6 @@ This is an extension to save and optimize SVG files with [SVGO](https://github.c
 
 The default Inkscape SVG files produces a lot of inkscape metadata for edition purposes since SVG is the default file extension at inkscape. Using SVGO we can remove a lot of redundant and useless information such as editor metadata, comments, hidden elements, default or unknown values and other stuff that can be removed or converted often without affecting SVG rendering result.
 
-[SVGO](https://github.com/svg/svgo) is not activly developed, see https://fedoramagazine.org/design-faster-web-pages-part-2-image-replacement/ and https://github.com/svg/svgo/issues/1055 and https://css-tricks.com/tools-for-optimizing-svg/#fn:1 .
-
 ## Warning for using optimizers
 
 optimizing svg can lead to server damage
